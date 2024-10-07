@@ -1,0 +1,65 @@
+/* app/styles/Services.module.css */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #070606;
+  font-weight: bold;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.serviceCard {
+  background-color: #84c8dd;
+  border: 1px solid #e98a3d;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(8, 7, 7, 0.1);
+  transition: transform 0.2s;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+}
+
+.serviceImage {
+  border-radius: 8px;
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #020101;
+  font-weight: bold;
+}
+
+.serviceDescription {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #3b3a3a;
+}
+
+.serviceLink {
+  display: inline-block;
+  background-color: #5e6268;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.serviceLink:hover {
+  background-color: #005bb5;
+}

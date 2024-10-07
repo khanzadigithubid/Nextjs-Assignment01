@@ -1,0 +1,51 @@
+/* app/styles/Navbar.module.css */
+
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Center items vertically */
+  background-color: #0a050a; /* Dark background for the navbar */
+  padding: 15px 20px; /* Padding for top/bottom and left/right */
+  position: sticky; /* Keep navbar fixed at the top */
+  top: 0; /* Position from the top */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.logo {
+  font-size: 1.5rem; /* Larger font size for the logo */
+  color: #e4dede; /* White color for the logo text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.navLinks {
+  list-style: none; /* Remove bullet points from the list */
+  display: flex; /* Display links in a row */
+  gap: 20px; /* Space between links */
+}
+
+.navLinks li {
+  display: inline; /* Display list items inline */
+}
+
+.navLinks a {
+  color: #fff; /* White color for link text */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding for links */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.navLinks a:hover {
+  background-color: #555; /* Darker background on hover */
+  color: #ffcc00; /* Change text color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navLinks {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 10px; /* Space between links */
+  }
+}

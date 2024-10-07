@@ -1,0 +1,106 @@
+/* app/styles/Showroom.module.css */
+
+.container {
+  max-width: 800px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center text */
+  background-color: #df9595; /* Light background color for container */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.container:hover {
+  background-color: #e9a7a7; /* Slightly darker background on hover */
+}
+
+.title {
+  font-size: 2.5rem; /* Increase title size */
+  margin-bottom: 20px; /* Space below the title */
+  color: #0c0b0b; /* Dark gray color */
+  background-color: #f1c6c6; /* Light gray background for title */
+  padding: 10px; /* Padding for the title */
+  border-radius: 8px; /* Rounded corners for the title background */
+  transition: transform 0.3s; /* Smooth scaling transition */
+  font-weight: bold;
+}
+
+.title:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.carList {
+  display: grid; /* Use grid layout for car cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the car list */
+  background-color: #4d2121; /* White background for car list area */
+  border-radius: 10px; /* Rounded corners for the car list area */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.carCard {
+  background-color: #f7e4e4; /* Slightly off-white background for car cards */
+  border-radius: 10px; /* Rounded corners for cards */
+  overflow: hidden; /* Clip the content */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.carCard:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  background-color: #f9f9f9; /* Change background color on hover */
+}
+
+.imageWrapper {
+  margin: 0 auto; /* Center the image */
+  max-width: 100%; /* Make the image wrapper responsive */
+  background-color: #f7f7f7; /* Light gray background for image wrapper */
+  padding: 10px; /* Padding around the image wrapper */
+  border-radius: 10px; /* Rounded corners for the image wrapper */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.imageWrapper:hover {
+  background-color: #eaeaea; /* Slightly darker gray on hover */
+}
+
+.carImage {
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Smooth transition for image scale */
+}
+
+.carImage:hover {
+  transform: scale(1.05); /* Scale up image slightly on hover */
+}
+
+.description {
+  font-size: 1.2rem; /* Increase description size */
+  margin-top: 20px; /* Space above description */
+  color: #050505; /* Lighter gray color */
+  background-color: #f0f0f0; /* Light background for description */
+  padding: 10px; /* Padding for description */
+  border-radius: 8px; /* Rounded corners for the description background */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.description:hover {
+  background-color: #e6e6e6; /* Slightly darker gray on hover */
+}
+
+.error {
+  color: red; /* Red color for error messages */
+  font-weight: bold; /* Bold error message */
+  margin-top: 20px; /* Space above the error message */
+  background-color: #ffe6e6; /* Light red background for error */
+  padding: 10px; /* Padding for error message */
+  border-radius: 8px; /* Rounded corners for the error background */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.error:hover {
+  background-color: #ffcccc; /* Slightly darker red on hover */
+}

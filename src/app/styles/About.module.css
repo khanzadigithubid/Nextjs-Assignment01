@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the container */
+  padding: 2rem;
+  background-image: url('../public/image/car.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-color: #ffffff; /* Fallback background for contrast */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.imageContainer {
+  width: 100%;
+  overflow: hidden; /* Hide overflow for better image cropping */
+  border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+}
+
+.image {
+  border-radius: 10px 10px 0 0; /* Rounded corners for the image */
+}
+
+.textContainer {
+  padding: 1.5rem;
+  background-color: rgba(240, 244, 255, 0.9); /* Light blue background with transparency */
+  border-radius: 0 0 10px 10px; /* Rounded corners for the bottom */
+  border-left: 5px solid #0070f3; /* Blue left border for emphasis */
+}
+
+.title {
+  font-size: 2.5rem; /* Larger font size for the title */
+  color: #333333; /* Darker text color for title */
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for title */
+}
+
+.description {
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  color: #555555; /* Lighter text color for description */
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4757; /* Vibrant red button color */
+  color: #ffffff; /* White text on button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem; /* Space above the button */
+}
+
+.button:hover {
+  background-color: #ff6b81; /* Lighter red on hover */
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row; /* Stack elements horizontally on larger screens */
+  }
+
+  .imageContainer,
+  .textContainer {
+    flex: 1; /* Equal width for image and text containers */
+    padding: 1rem; /* Padding around text */
+  }
+
+  .imageContainer {
+    margin-right: 1rem; /* Space between image and text */
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+
+  .description {
+    font-size: 1rem; /* Smaller description on mobile */
+  }
+}
