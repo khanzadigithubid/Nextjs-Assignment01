@@ -7,10 +7,10 @@ import car4 from '../../public/image/car4.jpg'; // Add new car image
 import car5 from '../../public/image/car5.jpg'; // Add new car image
 import car6 from '../../public/image/car6.jpg'; // Add new car image
 
-// Define the car data type
+// Define the car data type with StaticImport for the image type
 type Car = {
   name: string;
-  image: StaticImageData;
+  image: StaticImport; // Use StaticImport for Next.js image imports
   description: string;
 };
 
