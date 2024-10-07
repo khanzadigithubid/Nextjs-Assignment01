@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image,{ StaticImageData } from 'next/image';
 import styles from '../../styles/Showroom.module.css';
 import car1 from '../../public/image/car1.jpg';
 import car2 from '../../public/image/car2.jpg';
@@ -10,7 +10,7 @@ import car6 from '../../public/image/car6.jpg'; // Add new car image
 // Define the car data type with StaticImport for the image type
 type Car = {
   name: string;
-  image: StaticImport; // Use StaticImport for Next.js image imports
+  image: StaticImageData; // Use StaticImport for Next.js image imports
   description: string;
 };
 
