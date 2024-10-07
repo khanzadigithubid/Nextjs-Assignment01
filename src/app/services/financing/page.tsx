@@ -15,7 +15,7 @@ const Financing: React.FC = () => {
         className={styles.financingImage} // Optional: Add a class for additional styling
       />
       <p className={styles.description}>
-      💰📊 Finance Services: Our finance services are here to help you navigate the world of vehicle ownership with ease! Whether you're looking to purchase a new car, refinance your current loan, or explore leasing options, our expert team provides tailored solutions to fit your budget. 🏦🚗 We offer competitive rates and flexible payment plans, making it simple for you to get behind the wheel of your dream vehicle. Let us guide you through the financing process so you can drive with confidence! 🌟✨
+      💰📊 Finance Services: Our finance services are here to help you navigate the world of vehicle ownership with ease! Whether you are looking to purchase a new car, refinance your current loan, or explore leasing options, our expert team provides tailored solutions to fit your budget. 🏦🚗 We offer competitive rates and flexible payment plans, making it simple for you to get behind the wheel of your dream vehicle. Let us guide you through the financing process so you can drive with confidence! 🌟✨
       </p>
     </div>
   );
