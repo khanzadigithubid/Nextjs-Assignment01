@@ -1,7 +1,7 @@
 // app/about/page.tsx
 import styles from '../styles/About.module.css';
 import Image from 'next/image'; // Import the Image component
-import car from '../public/image/car.jpg'; // Correct path for your image
+import car from '../public/image/carAbount.jpg'; // Correct path for your image
 
 const About: React.FC = () => {
   return (

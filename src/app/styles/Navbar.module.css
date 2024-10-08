@@ -1,51 +1,113 @@
-/* app/styles/Navbar.module.css */
-
 .navbar {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space between logo and links */
-  align-items: center; /* Center items vertically */
-  background-color: #0a050a; /* Dark background for the navbar */
-  padding: 15px 20px; /* Padding for top/bottom and left/right */
-  position: sticky; /* Keep navbar fixed at the top */
-  top: 0; /* Position from the top */
-  z-index: 1000; /* Ensure it stays on top of other content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a050a;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
-  font-size: 1.5rem; /* Larger font size for the logo */
-  color: #e4dede; /* White color for the logo text */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Bold text for emphasis */
+  font-size: 1.5rem;
+  color: #e4dede;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  border: none;
+  background: none;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .navLinks {
-  list-style: none; /* Remove bullet points from the list */
-  display: flex; /* Display links in a row */
-  gap: 20px; /* Space between links */
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for showing/hiding */
 }
 
 .navLinks li {
-  display: inline; /* Display list items inline */
+  display: inline;
 }
 
 .navLinks a {
-  color: #fff; /* White color for link text */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 15px; /* Padding for links */
-  border-radius: 5px; /* Rounded corners for links */
-  transition: background-color 0.3s; /* Smooth background transition */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .navLinks a:hover {
-  background-color: #555; /* Darker background on hover */
-  color: #ffcc00; /* Change text color on hover */
+  background-color: #555;
+  color: #ffcc00;
+}
+
+/* Active mobile menu */
+.navActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center items horizontally */
+  width: 100%;
+  /* Take full width in mobile view */
+  gap: 10px;
+  /* Space between links */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    /* Show the hamburger icon on smaller screens */
+  }
+
   .navLinks {
-    flex-direction: column; /* Stack links vertically on smaller screens */
-    gap: 10px; /* Space between links */
+    position: absolute;
+    top: 100%;
+    /* Push the menu below the navbar */
+    right: 0;
+    background-color: #0a050a;
+    flex-direction: column;
+    /* Stack items vertically in mobile view */
+    align-items: center;
+    /* Center the links */
+    gap: 10px;
+    width: 100%;
+    /* Full width for mobile menu */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    /* Animate height change */
+  }
+
+  .navActive {
+    max-height: 300px;
+    /* Expand the menu when active */
+  }
+
+  .navLinks a {
+    padding: 15px;
+    /* Increase padding for mobile */
+    width: 100%;
+    /* Full width links in mobile view */
+    text-align: center;
+    /* Center text */
   }
 }

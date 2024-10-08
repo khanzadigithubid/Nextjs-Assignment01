@@ -1,4 +1,3 @@
-// app/page.tsx
 import styles from './styles/Home.module.css';
 
 const Home: React.FC = () => {
