@@ -1,0 +1,79 @@
+/* Container for the single car page with a flexbox layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    margin-top: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Car image wrapper on the left */
+  .imageWrapper {
+    flex-basis: 40%;
+    margin-right: 20px;
+  }
+  
+  .carImage {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Description on the right */
+  .descriptionWrapper {
+    flex-basis: 55%;
+  }
+  
+  .description {
+    font-size: 1.15rem;
+    color: #555;
+    text-align: left;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Back button container */
+.backButtonWrapper {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Back button styling */
+  .backButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0070f3; /* Blue color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .backButton:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+  }
+  

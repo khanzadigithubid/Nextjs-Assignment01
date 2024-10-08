@@ -1,16 +1,17 @@
-import Image,{ StaticImageData } from 'next/image';
-import styles from '../../styles/Showroom.module.css';
+import Image, { StaticImageData } from 'next/image';
+import styles from '../../styles/SingleCar.module.css';
 import car1 from '../../public/image/car1.jpg';
 import car2 from '../../public/image/car2.jpg';
 import car3 from '../../public/image/car3.jpg';
-import car4 from '../../public/image/car4.jpg'; // Add new car image
-import car5 from '../../public/image/car5.jpg'; // Add new car image
-import car6 from '../../public/image/car6.jpg'; // Add new car image
+import car4 from '../../public/image/car4.jpg';
+import car5 from '../../public/image/car5.jpg';
+import car6 from '../../public/image/car6.jpg';
+import Link from 'next/link';
 
 // Define the car data type with StaticImport for the image type
 type Car = {
   name: string;
-  image: StaticImageData; // Use StaticImport for Next.js image imports
+  image: StaticImageData;
   description: string;
 };
 
@@ -66,19 +67,25 @@ const CarDetails = ({ params }: { params: { id: string } }) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>{car.name}</h1>
       <div className={styles.imageWrapper}>
         <Image
           src={car.image}
           alt={car.name}
           layout="responsive"
-          width={600}
-          height={400}
+          width={300}
+          height={200}
           className={styles.carImage}
         />
       </div>
-      <p className={styles.description}>{car.description}</p>
+      <div className={styles.descriptionWrapper}>
+        <h1 className={styles.title}>{car.name}</h1>
+        <p className={styles.description}>{car.description}</p>
+        <div className={styles.backButtonWrapper}>
+          <Link href="/showroom" className={styles.backButton}>Back to Showroom</Link>
+        </div>
+      </div>
     </div>
+
   );
 };
 
