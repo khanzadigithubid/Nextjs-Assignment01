@@ -1,23 +1,23 @@
 .container {
   display: flex;
-  flex-direction: column; /* Stack elements vertically on smaller screens */
-  max-width: 1200px; /* Maximum width for larger screens */
-  margin: 0 auto; /* Center the container */
+  flex-direction: column; 
+  max-width: 1200px; 
+  margin: 0 auto; 
   padding: 2rem; 
-  margin-top: 5rem; /* For Maintain positon From Top */
-  background-image: url('../public/image/car.jpg'); /* Path to your background image */
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-color: #ffffff; /* Fallback background for contrast */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  border-radius: 10px; /* Rounded corners */
+  margin-top: 5rem; 
+  background-image: url('../public/image/car.jpg'); /* background image */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-color: #ffffff; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
 }
 
 .imageContainer {
   width: 100%;
-  overflow: hidden; /* Hide overflow for better image cropping */
-  border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+  overflow: hidden; 
+  border-radius: 10px 10px 0 0; 
 }
 
 .image {
@@ -41,9 +41,9 @@
 }
 
 .description {
-  font-size: 1.2rem; /* Slightly larger font size for readability */
-  color: #555555; /* Lighter text color for description */
-  line-height: 1.6; /* Increased line height for better readability */
+  font-size: 1.2rem; 
+  color: #555555; 
+  line-height: 1.6; 
 }
 
 .button {
@@ -58,32 +58,32 @@
 }
 
 .button:hover {
-  background-color: #ff6b81; /* Lighter red on hover */
+  background-color: #ff6b81; 
 }
 
 /* Responsive adjustments */
 @media (min-width: 600px) {
   .container {
-    flex-direction: row; /* Stack elements horizontally on larger screens */
+    flex-direction: row; 
   }
 
   .imageContainer,
   .textContainer {
-    flex: 1; /* Equal width for image and text containers */
-    padding: 1rem; /* Padding around text */
+    flex: 1; 
+    padding: 1rem; 
   }
 
   .imageContainer {
-    margin-right: 1rem; /* Space between image and text */
+    margin-right: 1rem; 
   }
 }
 
 @media (max-width: 600px) {
   .title {
-    font-size: 2rem; /* Smaller title on mobile */
+    font-size: 2rem; 
   }
 
   .description {
-    font-size: 1rem; /* Smaller description on mobile */
+    font-size: 1rem; 
   }
 }
